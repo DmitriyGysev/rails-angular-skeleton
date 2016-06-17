@@ -43,7 +43,7 @@ angular.module('RailsAngularSkeleton', ['ui.router', 'templates', 'Devise'])
                 });
 
             // $urlRouterProvider.otherwise('home');
-            $locationProvider.html5Mode(true).hashPrefix('*');
+            $locationProvider.html5Mode(true);
             $urlRouterProvider.otherwise("/");
 
         }
