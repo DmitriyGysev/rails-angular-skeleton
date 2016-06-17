@@ -46,6 +46,9 @@ GEM
     bcrypt (3.1.11)
     binding_of_caller (0.7.2)
       debug_inspector (>= 0.0.1)
+    bourbon (4.2.7)
+      sass (~> 3.4)
+      thor (~> 0.19)
     builder (3.2.2)
     byebug (9.0.5)
     coffee-rails (4.1.1)
@@ -165,6 +168,7 @@ PLATFORMS
 DEPENDENCIES
   angular-rails-templates
   angular_rails_csrf
+  bourbon
   byebug
   coffee-rails (~> 4.1.0)
   devise

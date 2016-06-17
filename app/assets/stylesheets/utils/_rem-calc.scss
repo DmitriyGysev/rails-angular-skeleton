@@ -1,0 +1,5 @@
+$rem-base: 10 !default;
+
+@function rem($pixelValue, $baseValue: $rem-base) {
+  @return ($pixelValue / $baseValue) * 1rem;
+}
