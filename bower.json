@@ -1,0 +1,23 @@
+{
+  "name": "Rails_Angular-skeleton",
+  "homepage": "https://github.com/DmitriyGysev/Rails-Angular-skeleton",
+  "authors": [
+    "Dmitriy Gusev"
+  ],
+  "description": "Template",
+  "main": "",
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "angular": "^1.5.7",
+    "angular-ui-router": "^0.3.1",
+    "bootstrap": "^3.3.6",
+    "AngularDevise": "angular-devise#^1.3.0"
+  }
+}

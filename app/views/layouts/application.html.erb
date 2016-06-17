@@ -1,14 +1,18 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>RailsAngularSkeleton</title>
+  <title>EDGE</title>
   <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
   <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
   <%= csrf_meta_tags %>
 </head>
-<body>
+<body ng-app="RailsAngularSkeleton">
 
-<%= yield %>
-
+  <div class="row">
+    <div class="col-md-6 col-md-offset-3">
+      <div ng-include="'nav/_nav.html'"></div>
+      <ui-view></ui-view>
+    </div>
+  </div>
 </body>
 </html>

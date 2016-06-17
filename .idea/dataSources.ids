@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<component name="dataSourceStorage">
+  <data-source name="PostgreSQL - project_development@localhost" uuid="ea25cebd-4d6c-4d8a-8355-63f2fb59be71">
+    <database-info product="PostgreSQL" version="9.3.12" jdbc-version="4.0" driver-name="PostgreSQL Native Driver" driver-version="PostgreSQL 9.4 JDBC4 (build 1201)">
+      <identifier-quote-string>&quot;</identifier-quote-string>
+    </database-info>
+    <case-sensitivity plain-identifiers="lower" quoted-identifiers="exact"/>
+    <database-model serializer="dbm" rdbms="POSTGRES" format-version="2.5">
+      <database id="1" name="project_development"/>
+      <schema id="2" parent="1" name="public">
+        <object-id>2200</object-id>
+        <comment>standard public schema</comment>
+        <introspection-state-number>82093</introspection-state-number>
+        <introspection-timestamp>2016-06-17.13:13:04.954</introspection-timestamp>
+      </schema>
+      <sequence id="3" parent="2" name="users_id_seq">
+        <object-id>512567</object-id>
+        <state-number>82093</state-number>
+      </sequence>
+      <table id="4" parent="2" name="schema_migrations">
+        <object-id>512538</object-id>
+        <state-number>82017</state-number>
+      </table>
+      <table id="5" parent="2" name="users">
+        <object-id>512569</object-id>
+        <state-number>82093</state-number>
+      </table>
+      <column id="6" parent="4" name="version">
+        <state-number>82017</state-number>
+        <mandatory>1</mandatory>
+        <data-type>varchar</data-type>
+      </column>
+      <index id="7" parent="4" name="unique_schema_migrations">
+        <object-id>512544</object-id>
+        <columns>version</columns>
+        <desc-columns></desc-columns>
+        <unique>1</unique>
+      </index>
+      <column id="8" parent="5" name="id">
+        <state-number>82093</state-number>
+        <mandatory>1</mandatory>
+        <data-type>integer</data-type>
+        <default-expression>nextval(&apos;users_id_seq&apos;::regclass)</default-expression>
+      </column>
+      <column id="9" parent="5" name="email">
+        <state-number>82093</state-number>
+        <mandatory>1</mandatory>
+        <data-type>varchar</data-type>
+        <default-expression>&apos;&apos;::character varying</default-expression>
+      </column>
+      <column id="10" parent="5" name="encrypted_password">
+        <state-number>82093</state-number>
+        <mandatory>1</mandatory>
+        <data-type>varchar</data-type>
+        <default-expression>&apos;&apos;::character varying</default-expression>
+      </column>
+      <column id="11" parent="5" name="reset_password_token">
+        <state-number>82093</state-number>
+        <data-type>varchar</data-type>
+      </column>
+      <column id="12" parent="5" name="reset_password_sent_at">
+        <state-number>82093</state-number>
+        <data-type>timestamp</data-type>
+      </column>
+      <column id="13" parent="5" name="remember_created_at">
+        <state-number>82093</state-number>
+        <data-type>timestamp</data-type>
+      </column>
+      <column id="14" parent="5" name="sign_in_count">
+        <state-number>82093</state-number>
+        <mandatory>1</mandatory>
+        <data-type>integer</data-type>
+        <default-expression>0</default-expression>
+      </column>
+      <column id="15" parent="5" name="current_sign_in_at">
+        <state-number>82093</state-number>
+        <data-type>timestamp</data-type>
+      </column>
+      <column id="16" parent="5" name="last_sign_in_at">
+        <state-number>82093</state-number>
+        <data-type>timestamp</data-type>
+      </column>
+      <column id="17" parent="5" name="current_sign_in_ip">
+        <state-number>82093</state-number>
+        <data-type>inet</data-type>
+      </column>
+      <column id="18" parent="5" name="last_sign_in_ip">
+        <state-number>82093</state-number>
+        <data-type>inet</data-type>
+      </column>
+      <column id="19" parent="5" name="created_at">
+        <state-number>82093</state-number>
+        <mandatory>1</mandatory>
+        <data-type>timestamp</data-type>
+      </column>
+      <column id="20" parent="5" name="updated_at">
+        <state-number>82093</state-number>
+        <mandatory>1</mandatory>
+        <data-type>timestamp</data-type>
+      </column>
+      <index id="21" parent="5" name="users_pkey">
+        <object-id>512579</object-id>
+        <columns>id</columns>
+        <desc-columns></desc-columns>
+        <unique>1</unique>
+      </index>
+      <index id="22" parent="5" name="index_users_on_email">
+        <object-id>512581</object-id>
+        <columns>email</columns>
+        <desc-columns></desc-columns>
+        <unique>1</unique>
+      </index>
+      <index id="23" parent="5" name="index_users_on_reset_password_token">
+        <object-id>512582</object-id>
+        <columns>reset_password_token</columns>
+        <desc-columns></desc-columns>
+        <unique>1</unique>
+      </index>
+      <key id="24" parent="5" name="users_pkey">
+        <columns>id</columns>
+        <underlying-index>users_pkey</underlying-index>
+        <primary>1</primary>
+      </key>
+    </database-model>
+  </data-source>
+</component>
