@@ -5,11 +5,13 @@ angular.module('RailsAngularSkeleton', ['ui.router', 'templates', 'Devise'])
         '$urlRouterProvider',
         'AuthProvider',
         '$compileProvider',
-        function($stateProvider, $urlRouterProvider, AuthProvider, $compileProvider) {
+        '$locationProvider',
+        function($stateProvider, $urlRouterProvider, AuthProvider, $compileProvider, $locationProvider
+    ) {
             $compileProvider.imgSrcSanitizationWhitelist(/^\s*((https?|ftp|file|blob|chrome-extension):|data:image\/)/);
 
 
-            // AuthProvider.registerPath('users');
+            AuthProvider.registerPath('users');
 
             $stateProvider
                 
@@ -38,9 +40,11 @@ angular.module('RailsAngularSkeleton', ['ui.router', 'templates', 'Devise'])
                             $state.go('home');
                         })
                     }]
-                })
+                });
 
-            $urlRouterProvider.otherwise('home')
+            // $urlRouterProvider.otherwise('home');
+            $locationProvider.html5Mode(true).hashPrefix('*');
+            $urlRouterProvider.otherwise("/");
 
         }
     ]).run(['$rootScope', function($rootScope) {
