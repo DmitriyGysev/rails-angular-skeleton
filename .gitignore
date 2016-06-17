@@ -7,7 +7,25 @@
 # Ignore bundler config.
 /.bundle
 
+# Ignore byebug hustory.
+
+/.byebug_history
+
 # Ignore all logfiles and tempfiles.
-/log/*
-!/log/.keep
+/log/*.log
 /tmp
+/.idea
+
+# Ignore another not used files.
+database.yml
+doc/
+*.swp
+*~
+.project
+.DS_Store
+.idea
+.secret
+public/assets
+schema.rb
+test
+.idea/
