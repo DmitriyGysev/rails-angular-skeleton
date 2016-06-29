@@ -8,14 +8,14 @@
 
 Init your git repo
 
-= git remote set-url origin <address of your repo>
+ git remote set-url origin <address of your repo>
 
-= crate test commit
+ crate test commit
 
 Setup your environment.
 
-= bundle install
+ bundle install
 
-= bundle rake db:create
+ bundle rake db:create
 
-= bundle rake db:migrate
+ bundle rake db:migrate
