@@ -10,7 +10,7 @@ Init your git repo
 
  git remote set-url origin <address of your repo>
 
- crate test commit
+ create test commit
 
 Setup your environment.
 
