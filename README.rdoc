@@ -1,15 +1,21 @@
-== README
+=== README
 
-= Setup
+== Setup
 
-Get the code.
+ Get the code.
 
-% git clone git@github.com:DmitriyGysev/Rails-Angular-skeleton.git
+= git clone git@github.com:DmitriyGysev/Rails-Angular-skeleton.git
+
+Init your git repo
+
+= git remote set-url origin <address of your repo>
+
+= crate test commit
 
 Setup your environment.
 
-% bundle install
+= bundle install
 
-% bundle rake db:create
+= bundle rake db:create
 
-% bundle rake db:migrate
+= bundle rake db:migrate
