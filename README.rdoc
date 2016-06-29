@@ -1,10 +1,10 @@
-=== README
+= README
 
 == Setup
 
  Get the code.
 
-= git clone git@github.com:DmitriyGysev/Rails-Angular-skeleton.git
+ git clone git@github.com:DmitriyGysev/Rails-Angular-skeleton.git
 
 Init your git repo
 
